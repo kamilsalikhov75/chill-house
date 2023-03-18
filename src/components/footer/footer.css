@@ -1,0 +1,30 @@
+.footer {
+  margin: 30px 0;
+}
+
+.footer__navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer__link {
+  height: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  text-decoration: none;
+}
+
+@media (max-width: 865px) {
+  .footer__navigation {
+    flex-direction: column;
+  }
+  .footer__link {
+    width: 100%;
+  }
+}

@@ -1,0 +1,51 @@
+.cottages__top {
+  background-image: url('../../assets/background.jpeg');
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+.cottage {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: start;
+  margin-top: 30px;
+}
+
+.cottage__img {
+  width: 600px;
+}
+
+.cottage .text {
+  width: 560px;
+  margin-bottom: 20px;
+}
+
+.cottage__link {
+  display: flex;
+  width: fit-content;
+  color: #2b4137;
+  padding: 10px;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  .cottage__img {
+    width: 500px;
+  }
+  .cottage .text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .cottage {
+    flex-direction: column;
+  }
+  .cottage__img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,16 @@
+.cottage-page__top {
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 64%;
+}
+
+.cottage-page__top--1 {
+  background-image: url('../../assets/cottage-back-1.jpeg');
+}
+.cottage-page__top--2 {
+  background-image: url('../../assets/cottage-back-2.jpeg');
+}
+.cottage-page__top--3 {
+  background-image: url('../../assets/cottage-back-3.jpeg');
+}

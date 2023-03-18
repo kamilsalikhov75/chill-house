@@ -1,0 +1,26 @@
+.about__top {
+  height: 50vh;
+  background-image: url('../../assets/about-background.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+.about .title {
+  margin-bottom: 20px;
+}
+
+.about .text {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 15px;
+}
+
+.about .subtitle {
+  margin-bottom: 20px;
+}
+
+.ul-title {
+  border: none !important;
+  padding: 0 !important;
+}

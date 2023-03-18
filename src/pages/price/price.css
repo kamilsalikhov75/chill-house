@@ -1,0 +1,11 @@
+.price__top {
+  height: 50vh;
+  background-image: url('../../assets/price-background.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 30%;
+}
+
+.price__item {
+  margin: 15px 0;
+}

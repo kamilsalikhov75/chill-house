@@ -1,0 +1,22 @@
+.checkout__top {
+  height: 50vh;
+  background-image: url('../../assets/background.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 20px;
+}
+
+.checkout__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.checkout__input,
+.checkout__button,
+.select {
+  font-size: 20px;
+  line-height: 24px;
+  padding: 10px;
+}

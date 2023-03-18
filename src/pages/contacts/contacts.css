@@ -1,0 +1,11 @@
+.contacts__top {
+  height: 50vh;
+  background-image: url('../../assets/contacts-background.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+.contacts .title{
+  margin-bottom: 20px;
+}
