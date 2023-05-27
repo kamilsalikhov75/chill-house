@@ -11,7 +11,7 @@ function Header() {
   return (
     <header className="header">
       <div className="container">
-        <Link to="/index.html" className="header__logo-link">
+        <Link to="/" className="header__logo-link">
           <img src={logo} className="header__logo" />
         </Link>
         <button
