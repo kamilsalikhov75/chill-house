@@ -6,11 +6,23 @@
 }
 
 .cottage-page__top--1 {
-  background-image: url('../../assets/cottage-back-1.jpeg');
+  background-image: url("../../assets/cottage-back-1.jpeg");
 }
 .cottage-page__top--2 {
-  background-image: url('../../assets/cottage-back-2.jpeg');
+  background-image: url("../../assets/cottage-back-2.jpeg");
 }
 .cottage-page__top--3 {
-  background-image: url('../../assets/cottage-back-3.jpeg');
+  background-image: url("../../assets/cottage-back-3.jpeg");
+}
+
+.info__block {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+}
+
+.cottage-page__link{
+  font-size: 26px;
+    line-height: 35px;
+    color: #ffffff;
 }

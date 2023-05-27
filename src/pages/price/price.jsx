@@ -1,5 +1,6 @@
-import { cottages, inventories } from '../../gallery';
-import './price.css';
+import { Link } from "react-router-dom";
+import { cottages, inventories } from "../../gallery";
+import "./price.css";
 
 function Price() {
   return (
@@ -11,7 +12,10 @@ function Price() {
           <p className="text">Время заезда – 16:00, время выезда – 13:00</p>
           {cottages.map((cottage) => (
             <div key={cottage.name} className="price__item">
-              <h3 className="subtitle">{cottage.name}</h3>
+              <Link to={`/cottage/${cottage.id}`} className="subtitle">
+                {cottage.name}
+              </Link>
+              <img src={cottage.img} />
               <p className="text">
                 В будние дни: {cottage.weekdayPrice} рублей
               </p>
