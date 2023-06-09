@@ -1,16 +1,16 @@
-import { useState } from 'react';
-import { useParams } from 'react-router-dom';
-import { cottages } from '../../gallery';
-import './checkout.css';
+import { useState } from "react";
+import { useParams } from "react-router-dom";
+import { cottages } from "../../gallery";
+import "./checkout.css";
 
 function Checkout() {
   const { id } = useParams();
   const [cottage, setCottage] = useState(id ? id : 1);
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [phone, setPhone] = useState('');
-  const [date, setDate] = useState('');
-
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [date, setDate] = useState("");
+  console.log(date);
   return (
     <div className="checkout">
       <div className="checkout__top"></div>
@@ -26,24 +26,28 @@ function Checkout() {
             className="checkout__form"
           >
             <input
+              onChange={(event) => setFirstName(event.target.value)}
               type="text"
               className="checkout__input"
               placeholder="Имя"
               name="entry.596404826"
             />
             <input
+              onChange={(event) => setLastName(event.target.value)}
               type="text"
               className="checkout__input"
               placeholder="Фамилия"
               name="entry.1400969293"
             />
             <input
+              onChange={(event) => setPhone(event.target.value)}
               type="text"
               className="checkout__input"
               placeholder="Номер телефона"
               name="entry.782664725"
             />
             <input
+              onChange={(event) => setDate(event.target.value)}
               type="date"
               className="checkout__input"
               name="entry.126142573"
@@ -66,7 +70,17 @@ function Checkout() {
             <p className="text">
               Цена в выходной день: {cottages[cottage - 1].holidayPrice} рублей
             </p>
-            <button className="checkout__button">Отправить</button>
+            <button
+              disabled={
+                phone.length !== 11 ||
+                firstName.length === 0 ||
+                lastName === 0 ||
+                date.length === 0
+              }
+              className="checkout__button"
+            >
+              Отправить
+            </button>
           </form>
         </div>
       </div>
