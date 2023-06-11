@@ -36,7 +36,7 @@ function Header() {
             КОНТАКТЫ
           </Link>
           <Link to="/cottages" className="header__link">
-            КОТТЕДЖЫ
+            КОТТЕДЖИ
           </Link>
           <Link to="/price" className="header__link">
             ЦЕНЫ

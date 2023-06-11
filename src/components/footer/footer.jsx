@@ -17,7 +17,7 @@ function Footer() {
             КОНТАКТЫ
           </Link>
           <Link to="/cottages" className="footer__link">
-            КОТТЕДЖЫ
+            КОТТЕДЖИ
           </Link>
           <Link to="/price" className="footer__link">
             ЦЕНЫ
